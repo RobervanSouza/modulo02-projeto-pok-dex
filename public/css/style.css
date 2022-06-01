@@ -21,11 +21,13 @@ body {
 }
 
 body nav#menu{
+    justify-content: center;
      background-color: #86d30a;
      text-align: center;
  
 }
 nav {
+    
     width: 100%;
     background-color: #d30a40;
     position: fixed; /* fica com a posição fixa*/
@@ -36,6 +38,7 @@ nav {
 }
 
 nav ul {
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
     list-style: none;
@@ -130,6 +133,7 @@ section#cadastro img.imagen {
 }
 
 section#cadastro h2{
+    flex-wrap: wrap;
     margin-top: 5rem;
      width: 100%;
      text-align: center;
@@ -155,7 +159,7 @@ section#cadastro  form input{
 }
 
 section#cadastro form label{
-    
+    justify-content: center;
     margin: 1rem;
     color: red;
 }
@@ -239,8 +243,29 @@ span#close {
     transform: scale(1.5);
   }
 
-  @media (max-widht: 869px){
-      #img-logo{
-          width: 100%;
-      }
-  }
+  @media screen and (max-device-width: 280px){
+    
+    body{
+        flex-flow: column wrap ;
+    }
+   nav ul {
+    
+    flex-wrap: wrap;
+
+   }
+   section#cadastro h2 {
+       flex-wrap: wrap;
+       flex-flow: column wrap;
+   }
+} 
+
+
+@media screen and (max-device-width: 510px){
+    section#cadastro h2{
+        flex-wrap: wrap;
+        flex-flow: column wrap;
+    }
+
+}
+    
+ 

@@ -1,9 +1,9 @@
 const closemensagem = document.querySelector("#close");
 const mensagem = document.querySelector("#mensagem");
-    //zerar o valor do input
+    
     
 closemensagem.addEventListener("click",   function ()  {
-    mensagem.style.display= "none"
+    mensagem.style.display= "none";
 });
 
 setTimeout(() => {
