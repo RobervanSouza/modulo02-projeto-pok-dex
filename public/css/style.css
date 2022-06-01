@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&display=swap');
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'B612 Mono', monospace;
+    scroll-behavior: smooth; /* fica mais leve rolando a pagina-*/
+}
+ 
+body {
+    background-image: url(/img/banner22.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body nav#menu{
+     background-color: #86d30a;
+     text-align: center;
+ 
+}
+nav {
+    width: 100%;
+    background-color: #d30a40;
+    position: fixed; /* fica com a posição fixa*/
+    z-index: 9999; /* fica acima de tudo*/
+    
+
+    
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li  {
+  padding: .8rem;
+  
+
+}
+nav img{
+    width: 3rem;
+    
+}
+
+nav  h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+} 
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+
+    
+
+main{
+    margin: 0 10rem 0 10rem; /* margens laterais*/
+
+
+}
+
+section#cards{ /* para chamar uma ID usa #CARDS*/
+    flex-wrap: wrap;/* quebra a linha e deixar o proximo embaixo   */
+    display: flex; /* cada item do lado do outro, se for adicionar o quarto item então manda para baixo*/
+    justify-content: space-evenly; /* ESPAÇO ENTRE ELES*/
+    margin-top: 2rem; /* para ficar mais distante do meu menu "header"*/
+    
+}
+
+section#cards div.card{ /* para chamar ID usa (#) para chamar class usa(.)*/
+    width: 20rem;
+    box-shadow: inset 0 0 1em gold, 0 0 1em red; /* borda ao redor da imagem*/
+    padding: 0.5rem;  /* para distanciar o testo da imagem*/
+    
+}
+
+
+
+section#cards h2{   /*   */ 
+    width: 100%;   /*   */
+    text-align: center;/*   */
+    margin: 3rem;
+
+}
+
+
+section#cards div.card img{/*   */
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+
+section#cards div.card h3{
+      margin-bottom: 1rem;    
+
+}
+
+section#cards div.card p.descricao{
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+section#cadastro {
+    display: flex;
+    justify-content: center;
+
+    padding: 5rem;
+}
+section#cadastro img.imagen {
+    width: 50%;
+    
+}
+
+section#cadastro h2{
+    margin-top: 5rem;
+     width: 100%;
+     text-align: center;
+     padding-bottom: 5rem;
+     color: blue;
+}
+ section#cadastro h2.detalhes{
+     color: #d30a40;
+     margin-top: 5rem;
+ }
+section#cadastro  form {
+     width: 100%;
+     margin-top: 2rem;
+} 
+
+section#cadastro  form input{
+    width: 100%;
+    padding: .6rem;
+    font-size: 1rem;
+    outline: none;
+    border: solid 2px green;
+    margin: 0 1rem 1rem 1rem;
+}
+
+section#cadastro form label{
+    
+    margin: 1rem;
+    color: red;
+}
+
+section#cadastro  form button{
+    
+    padding: 1rem 4rem 1rem 4rem;
+    width: 29%;
+    display: flex;
+    justify-content: center;/* centralizar nome */
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: center;
+    background-color: rgb(137, 196, 235);
+    border: solid 1px  red;
+    color: red;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    
+
+}
+section#cadastro  form button:hover{
+    background-color: yellow;
+    color: black;
+}
+
+
+footer{
+    background-image: url(/img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+footer p {
+    font-weight: bold;
+    width: 100%;
+    color: red;
+    text-align: center;
+    padding: .2rem;
+    font-size: 1.2rem;
+}
+
+footer  p a{
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+/* mensagem*/
+section#mensagem{
+    margin-top: 1rem;
+    padding: 1.5rem;
+    background-color: rgb(255, 127, 144);
+    color: blue;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+span#close {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  span#close:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.5);
+  }
+
+  @media (max-widht: 869px){
+      #img-logo{
+          width: 100%;
+      }
+  }
