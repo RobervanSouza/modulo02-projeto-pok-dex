@@ -1,4 +1,4 @@
-# https://dashboard.heroku.com/apps/pokedex-robervan
+# https://pokedex-robervan.herokuapp.com/
 
 # Pokedex
 
