@@ -37,7 +37,13 @@ npm i express  -> para instala o express.
 npm i ejs -> para instalar o ejs.
 
 
-Após a instalação ver.
+Agora você deve digitar em seu terminal: npm run dev (isso irá startar seu servidor para execução do projeto).
+
+
+
+Abra o link que o terminal gerou, vai da um click ou abra o navegador e coloque esse endereço.
+
+Exemplo: Servidor rodando em http://localhost:3000
 
 ## Pagina de desenvolvimento
 
